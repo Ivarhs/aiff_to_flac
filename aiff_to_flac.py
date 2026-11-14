@@ -10,6 +10,7 @@ def convert_files(folder_path, status_label, progress_bar, root):
         return
 
     # Finn alle AIFF-filer (både .aiff og .aif)
+    # Ivar
     aiff_files = [f for f in os.listdir(folder_path) if f.lower().endswith(('.aiff', '.aif'))]
     
     if not aiff_files:
